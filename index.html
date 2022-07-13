@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+   <link rel="stylesheet" href="style/bootstrap.min.css">
+   <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <header class="text-center py-5">
+      <h1 class="text-primary display-3">
+        Todo List
+      </h1>
+    </header>
+
+
+    <main>
+      <div class="container">
+        <form id="create-form" class="mb-5">
+          <div class="mb-3">
+            <input
+              id="create-input"
+              type="text"
+              class="form-control"
+              placeholder="Enter some todo..."
+            />
+            <span id="error-create" class="text-danger"></span>
+          </div>
+          <button class="btn btn-primary d-block ms-auto">Add</button>
+        </form>
+        <!-- todo list -->
+        <ul id="todo-list" class="list-group"></ul>
+      </div>
+    </main>
+
+
+    <div id="todo-modal" class="todo-modal hidden">
+      <div class="card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h4>Change This Todo</h4>
+          <img
+           src="images/close.svg"
+            alt="close-btn"
+             id="close"
+             width="25"
+              height="25">
+        </div>
+        <div class="card-body">
+          <form id="edit-form" class="mb-5">
+            <div class="mb-3">
+              <input
+               type="text"
+                id="edit-input"
+                class="form-control"
+                placeholder="Enter some todo...">
+                <span id="error-edit" class="text-danger"></span>
+            </div>
+            <button class="btn btn-outline-success d-block ms-auto">
+              Save Changes
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="overlay" class="overlay hidden"></div>
+
+   <script src="JavaScript/bootstrap.min.js"></script>
+   <script src="JavaScript/app.js"></script>
+  </body>
+</html>

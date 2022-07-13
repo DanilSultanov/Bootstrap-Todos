@@ -1,0 +1,28 @@
+.container {
+  max-width: 550px;
+  width: 100%;
+}
+
+.todo-modal{
+  max-width: 450px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.302);
+}
+
+.hidden{
+  display: none;
+}
